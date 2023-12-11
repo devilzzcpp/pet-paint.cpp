@@ -1,0 +1,45 @@
+*******управление программой и её особенности********* 
+
+программа управляется мышкой 
+
+фигуры и цвета выбираются в меню (слева)
+лкм по цвету меняет цвет заливки
+пкм по цвету меняет цвет обводки
+лкм по фигуре меняет фигуру
+ползунок сверху отвечает за ширину обводку, т.е перетягиванием его в правую сторону вы увеличите ширину обводки
+кнопка удаления - кнопка с изображением мусорки или нажатие клавиши "Z"
+
+
+лкм по кнопке текста (txt =)) включает режим текста, лкм на холсте запускает режим текста, т.е. после клика нужно написать текст и кликнуть еще раз по холсту
+(текст будет отображаться поверх других фигур, и удалить его к сожалению нельзя, функция текст находиться в доработке)
+
+фигуры рисуются средством выбора координат, т.е зажимаем лкм, тем самым выбирая первую координату (одного из углов),
+далее тянем до места второй координаты(второго угла), далее отпускаем и фигура занимает свое место (есть анимация по типу пейнта)
+
+
+желательно запускать программу с масштабом экрана 100%
+так же программа запустится в окне 1920 x 1050 =)
+
+
+
+*******program management and its features*********
+
+the program is controlled by the mouse
+
+shapes and colors are selected in the menu (on the left)
+the paintwork by color changes the fill
+color of the pcm by color changes the outline
+color of the paintwork by shape changes the shape
+the slider on top is responsible for the width of the outline, i.e. by dragging it to the right side you will increase the width of the outline
+the delete button is a button with an image of a trash can or pressing the "Z" key
+
+
+the lmb on the text button (text =)) turns on the text mode, the lmb on the canvas starts the text mode, i.e. after clicking, you need to write the text and click on the canvas again
+(the text will be displayed on top of other shapes, and unfortunately it cannot be deleted, the text function is under revision)
+
+the figures are drawn by a means of selecting coordinates, i.e. we clamp the paintwork, thereby choosing the first coordinate (of one of the corners),
+then we pull to the place of the second coordinate (of the second corner), then we release and the figure takes its place (there is an animation of the type of paint)
+
+
+it is advisable to run the program with a screen scale of 100%
+the program will also run in a 1920 x 1050 window =)

@@ -1,0 +1,108 @@
+#include "TXLib.h"
+#include "iostream"
+
+
+int x=0;
+int y=0;
+int xr=100;
+int yr=100;
+int zx=0;
+
+HDC mark=txLoadImage ("dev.bmp");
+
+
+class print //класс для рисования фигур
+{
+private:
+
+ int x2, y2;
+
+
+
+public:
+
+ int x, y;
+ int xr, yr;
+string name;
+
+int drawsquare()
+{
+ if (txMouseButtons() == 1 )
+ {x=txMouseX(); y=txMouseY();
+ while(txMouseButtons() == 1)
+ {
+
+  x2=txMouseX();
+  y2=txMouseY();
+
+ }
+
+ }
+ txSetFillColor(TX_WHITE);
+ txRectangle(x, y, xr, yr);
+
+}
+
+}      ;
+
+int main()
+    {
+
+    txCreateWindow (800, 600);
+    txSetColor     (TX_BLACK);
+
+    print sq();
+          //txSetFillColor (TX_DARKGRAY); Win32::RoundRect (txDC(), 105, 205, 705, 405, 30, 30);
+          //txSetFillColor (TX_WHITE);    Win32::RoundRect (txDC(), 100, 200, 700, 400, 30, 30);
+
+          //txSelectFont ("Arial", 20, 0, FW_BOLD);
+          //txDrawText   (100, 250, 700, 350, "click here!");
+while(1)
+{
+txSetFillColor(TX_BLACK);
+txClear();
+txBegin();
+
+
+sq.xr=100;
+sq.yr=100;
+sq.drawsquare();
+
+
+
+//txBitBlt (txDC(), x, y, 401, 416, mark);
+//if (txMouseButtons() == 1 ){x=txMouseX(); y=txMouseY();}
+//if (txMouseButtons() == 0 ){x2=txMouseX(); y2=txMouseX();}
+//if (txMouseButtons() == 1 )
+//{x=txMouseX(); y=txMouseY();
+//while(txMouseButtons() == 1)
+//{
+//xr=txMouseX();
+//yr=txMouseY();
+
+
+//txEnd();
+//}
+
+//}
+//txSetFillColor(TX_WHITE);
+//txRectangle(x, y, x2, y2);
+//if (txMouseButtons() == 0 ){zx=0;x2=txMouseX(); y2=txMouseX();}
+
+//int r=0;
+//if(txMouseButtons() == 1&&txMouseX()>105&&txMouseY()>205&&txMouseX()<705&&txMouseY()<405&& r==0)
+//{
+//  r=1;
+//  txClear();
+//  txSetFillColor(TX_BLACK);
+
+//}
+// if (r==1)
+// {
+//  if (txMouseButtons() == 1 ) txSetFillColor(TX_GRAY); txCircle (txMouseX(), txMouseY(), 20);
+// }
+txEnd();
+}
+    return 0;
+    }
+
